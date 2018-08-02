@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .loading {
+            max-width: 50%;
+            line-height: 1.4;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .loading_author {
+            font-weight: normal;
+            font-size: 0.9rem;
+            color: rgba(46, 3, 3, 0.5);
+            margin: 0.6rem 0 2rem 0;
+            display: block;
+        }
+        
+        .loading_anim {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            border: 5px solid rgba(46, 3, 3, 0.5);
+            border-left-color: crimson;
+            border-top-color: crimson;
+            border-radius: 50%;
+            animation: rotate 600ms infinite linear;
+        }
+        
+        @keyframes rotate {
+            to {
+                transform: rotate(1turn)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="loading">
+        For new sidebar colors, click your workspace name, then Preferences > Sidebar > Theme
+
+        <span class="loading_author"> - Your friends at Slack</span>
+        <span class="loading_anim"></span>
+    </section>
+</body>
+
+</html>
